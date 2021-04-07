@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+h1, h2 {
+	color: #eee;
+	background-color: blue;
+}
+
+
+#uno, #dos {
+	color: orange;
+	/*background-color: fuchsia;*/
+}
+
+.uno {
+	color: blue;
+	background-color: green;
+}
+
+/* todo lo que es columna*/
+table {
+	background-color: #F24911;
+	
+}
+
+#c1 {
+	background-color: #FFFFFF
+}
+
+table td#c2 {
+	background-color: #FFFF00
+}
+
+/*Quiero pintar el titulo de la tabla*/
+
+/*
+#t1 {
+	background-color: #000;
+}
+*/
+
+table th#t1 {
+	background-color: #00ff00;
+}
+
+table {
+	background-image: url(heart.png);
+}
+
