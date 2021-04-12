@@ -23,7 +23,8 @@ public class OrigenControllerForm {
 	  public String origenSubmit(@RequestParam("nombre") String nombre,
 			  @RequestParam("apellidos") String apellidos, 
 			  @RequestParam("sexo") String sexo,
-			  @RequestParam("correo") String correo
+			  @RequestParam("correo") String correo,
+			  @RequestParam("idioma") String[] idioma
 			  ) {
 		
           System.out.println(nombre);
