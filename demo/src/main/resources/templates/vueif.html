@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-witdh,initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title> Hola</title>
+</head>
+<body>
+	<!-- aprender algunas cosas bootstrap TAREA -->
+	<div id="app">
+		<template  v-if="nombre" >
+			<h1>Bienvenido, {{nombre}}</h1>
+			<h2> otra cosa </h2>
+		</template>
+		<p v-else>Por favor escribe tu nombre</p>
+		<!---Nombre de la variable-->
+		<p v-if="nombre.length <=2" >Tu nombre esta mal escrito</p>
+		<input type="text" v-model="nombre">
+	</div>
+<script src="https://unpkg.com/vue"></script>
+<script src="js/vueif.js"></script>
+</body>
+</html>
