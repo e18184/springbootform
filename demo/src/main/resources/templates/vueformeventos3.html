@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Eventos</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+    <body>
+	<div id="app">
+		<template v-if="nombre.length>0">
+			<h1>
+				{{sexo=='f'?'Bienvenida':'Bienvenido'}},{{nombre}}
+			</h1>
+		</template>	
+		<p v-else>Por favor escriba su nombre</p>
+	<form >	
+		<input type="text" v-model="nombre">
+		<p v-if="nombre==''">
+			Introdusca un valor 
+		</p>
+		<br>
+		<label>
+			Hombre: <input type="radio" v-model="sexo" value="m">
+		</label>
+		<label>
+			Mujer: <input type="radio" v-model="sexo" value="f">
+		</label>
+		<br>
+		<p> ¿Cuantos años de experiencia tiene con Spring? </p>
+		Respuesta: <strong>{{years_spring}}</strong>
+		<br>
+		<button type="button" @click="years_spring ++">+</button>
+		<button type="button" @click="years_spring --">-</button>
+		<p v-show="nombre">
+			<button type="submit" @click="eventoFormulario()">Registrar</button>
+		</p>
+	</form>	
+    </div>    
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/eventos3.js"></script>
+    </body>
+</html>
