@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta nombre="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Computer property</title>
+</head>
+    <body>    
+    <!-- definir un mensaje en el cual de acuerdo a un select
+    significado  'srta' 'sra' 
+    Estimada señora, solicitamos sus datos 
+    Estimada señorita, solicitamos sus datos -->>
+    <div id="app">
+    <label>¿Habla Español?
+    <h1>
+    {{mensaje}}
+    </h1>
+    <form>
+    <input v-model="espanol" type="checkbox">
+    <br>
+    <button type="submit">enviar el formulario</button> 
+    </form>
+    </label>
+    
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/computer.js"></script>
+    </body>
+</html>

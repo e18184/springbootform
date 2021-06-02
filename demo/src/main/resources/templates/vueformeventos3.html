@@ -31,13 +31,15 @@
 			Mujer: <input type="radio" v-model="sexo" value="f">
 		</label>
 		<br>
-		<p> ¿Cuantos años de experiencia tiene con Spring? </p>
+		<p> ï¿½Cuantos aï¿½os de experiencia tiene con Spring? </p>
 		Respuesta: <strong>{{years_spring}}</strong>
 		<br>
 		<button type="button" @click="years_spring ++">+</button>
-		<button type="button" @click="years_spring --">-</button>
-		<p v-show="nombre">
-			<button type="submit" @click="eventoFormulario()">Registrar</button>
+		<button type="button" v-bind:disabled="(years_spring==0)" @click="disminuir()">-</button>
+		<br>
+		<p v-show="nombre.length>0">
+			<button type="submit" >Registrar</button>
+			<button type="submit" @click.prevent="eventoFormulario(true,$event)">Registrar y salir</button>
 		</p>
 	</form>	
     </div>    
